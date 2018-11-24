@@ -37,8 +37,7 @@ catkin_package(
     message_runtime
 )
 
-include_directories(${catkin_INCLUDE_DIRS} include)
-
+include_directories(${artoolkit_DIR}/../../../include ${catkin_INCLUDE_DIRS} include)
 add_executable(ar_single
 	src/ar_single.cpp
 	src/object.cpp

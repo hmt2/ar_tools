@@ -12,7 +12,7 @@ catkin_package(
 	LIBRARIES GL glut ARgsub AR ARMulti ARvideo GL glut
 	EXPORTED_TARGETS ARToolkit_catkin
 )
-
+include_directories(${artoolkit_DIR}/../../../include ${catkin_INCLUDE_DIRS} include)
 include(ExternalProject)
 ExternalProject_Add(ARToolkit
 	# Settings:
